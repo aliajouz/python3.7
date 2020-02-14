@@ -1,6 +1,3 @@
-FROM python:3.7-alpine
+FROM python:3.7-stretch
 
-RUN apk update
-RUN apk add make automake gcc g++ subversion python3-dev
-
-RUN pip install --upgrade pip
+RUN apt-get -y install libc-dev
